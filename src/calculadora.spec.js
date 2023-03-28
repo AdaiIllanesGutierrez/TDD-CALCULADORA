@@ -7,7 +7,7 @@ describe("Calculadora", () => {
   it("convertir un string a un entero", () => {
     expect(calculadora("1")).toEqual(1);
   });
-  xit("separar segun la coma y sumar los numeros ", () => {
+  it("separar segun la coma y sumar los numeros ", () => {
     expect(calculadora("1,2")).toEqual(3);
   });
   xit("sumar 2 o mas valores separados por una coma", () => {
