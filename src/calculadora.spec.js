@@ -22,7 +22,7 @@ describe("Calculadora", () => {
   it(" sumar mas de 2 valores separado por guion o coma", () => {
     expect(calculadora("1,2,3-4-5")).toEqual(15);
   });
-  it(" sumar mas de 2 valores separados por guion o coma o un delimitardor especial ", () => {
+  it("sumar mas de 2 valores separados delimitardores especiales ", () => {
     expect(calculadora("//[;] 6,3-2;1")).toEqual(12);
   });
 
