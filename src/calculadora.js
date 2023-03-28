@@ -1,4 +1,3 @@
-import sumar from "./sumador";
 
 function Calculadora(texto) {
     if(texto=="") return 0;
