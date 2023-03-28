@@ -10,7 +10,7 @@ describe("Calculadora", () => {
   it("separar segun la coma y sumar los numeros ", () => {
     expect(calculadora("1,2")).toEqual(3);
   });
-  xit("sumar 2 o mas valores separados por una coma", () => {
+  it("sumar 2 o mas valores separados por una coma", () => {
     expect(calculadora("1,2,3,4,5")).toEqual(15);
   });
   xit("sumar 2 valores separados por guion", () => {

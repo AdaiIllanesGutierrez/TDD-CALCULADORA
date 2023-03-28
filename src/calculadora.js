@@ -1,4 +1,14 @@
 
+// function Calculadora(cadena) {
+//     if(cadena=="") return 0;
+   
+//     else return parseInt(cadena);
+
+//   }
+  
+//   export default Calculadora;
+  
+
   function contarDigitos(cadena,pos)
 {
     let digitos = 0;
@@ -38,7 +48,8 @@ function calculadora(cadena)
     {
         for(let i=0;i<cadena.length;i++)
         {
-                        
+            if(parseInt(cadena.charAt(i)) < 1000)
+            {             
                 if(parseInt(cadena.charAt(i+1)) < 1000)
                 {
                     suma = suma + parseInt(juntarDigitos(cadena,i,contarDigitos(cadena, i)));
@@ -48,7 +59,7 @@ function calculadora(cadena)
                 {
                     suma = suma + parseInt(cadena.charAt(i));
                 }                                               
-              
+            }     
         }
     }
     return suma;
